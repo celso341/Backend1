@@ -15,7 +15,7 @@ io.on("connection", socket => {
     socket.join(box);
   });
 });
-// Conexão do banco de dados
+// Conexão do banco de dados.
 mongoose.connect(
     "mongodb+srv://OmniStack:omnistack@cluster0-g1mdx.mongodb.net/omnistack?retryWrites=true&w=majority",
     {
