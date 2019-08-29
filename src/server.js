@@ -6,8 +6,8 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors());
-
-const server = require("http").Server(app);
+// Error com "http"!
+const server = require("https").Server(app);
 const io = require("socket.io")(server);
 
 io.on("connection", socket => {
